@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Answer3">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Answer 3"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/container"
+            tools:ignore="UselessLeaf" />
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/frgmnt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment 1"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bgcolor"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/frgmnt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment 2"
+                android:fontFamily="serif"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:padding="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/bgcolor"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
